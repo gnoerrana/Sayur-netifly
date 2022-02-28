@@ -6,8 +6,6 @@
 */
 
 import { ApolloClient, ApolloLink, InMemoryCache, HttpLink } from "@apollo/client";
-import { setContext } from '@apollo/client/link/context';
-import { RestLink } from "apollo-link-rest";
 
 const httpLink = new HttpLink({
   uri: "/api/*",

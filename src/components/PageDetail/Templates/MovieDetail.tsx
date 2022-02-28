@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import { useQuery, gql } from "@apollo/client";
-import { Link } from "react-router-dom";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
@@ -16,12 +15,6 @@ const Item = styled(Paper)(({ theme }) => ({
 	color: theme.palette.text.secondary,
 }));
 
-const Fade = styled(Paper)(({ theme }) => ({
-	width: "100%",
-	height: "100%",
-	background: "#000",
-	overflow: "hidden",
-}));
 const CrawlWrapper = styled(Paper)(({ theme }) => ({
 	position: "relative",
 	"& > .fade": {

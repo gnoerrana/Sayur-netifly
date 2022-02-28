@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useQuery, gql } from "@apollo/client";
 import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
@@ -9,21 +9,8 @@ import { styled } from "@mui/material/styles";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
-import CardActions from "@mui/material/CardActions";
 import { CardActionArea } from "@mui/material";
-import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import MoreVertIcon from "@mui/icons-material/MoreVert";
-import IconButton, { IconButtonProps } from "@mui/material/IconButton";
-import Collapse from "@mui/material/Collapse";
 import CircularProgress from "@mui/material/CircularProgress";
-
-const Item = styled(Paper)(({ theme }) => ({
-	backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
-	...theme.typography.body2,
-	padding: theme.spacing(1),
-	textAlign: "center",
-	color: theme.palette.text.secondary,
-}));
 
 const fetchData = (fetchData: any) => {
 	return gql`

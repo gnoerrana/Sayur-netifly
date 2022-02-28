@@ -1,7 +1,4 @@
-import React, { useState } from "react";
-import { useQuery, gql } from "@apollo/client";
-import Typography from "@mui/material/Typography";
-import CircularProgress from '@mui/material/CircularProgress';
+import React from "react";
 import { Movies, Peoples } from "./Templates";
 
 const CardItem = ({ ...props }) => {

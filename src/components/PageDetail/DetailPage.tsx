@@ -5,9 +5,8 @@
 * @Last Modified time: 2022-02-28 00:27:47
 */
 
-import React, { useState } from "react";
+import React from "react";
 import { useParams } from "react-router-dom";
-import Box from "@mui/material/Box";
 import { MovieDetail } from "./Templates";
 
 const DetailPage = () => {
