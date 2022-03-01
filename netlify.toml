@@ -1,7 +1,7 @@
 [build]
-    publish = "build/"
-    command = "npm run build"
-    functions = "./functions"
+  command = "yarn build && cd functions/node-fetch && yarn"
+  functions = "functions"
+  publish = "dist"
 
 [[redirects]]
     from = "/api/*"
