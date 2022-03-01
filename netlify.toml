@@ -9,5 +9,6 @@
   status = 200
   force = true
 [redirects.headers]
-    X-From = "Netlify"
-    X-Api-Key = "32b490c6-e39b-4706-87b1-65787f25f04b"
+    for = "/api/*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"
